@@ -9,6 +9,7 @@ cycler==0.12.1
 Django==4.2.8
 fonttools==4.46.0
 frozendict==2.3.10
+gunicorn==21.2.0
 holidays==0.38
 html5lib==1.1
 idna==3.6
