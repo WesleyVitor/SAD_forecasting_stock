@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-@7ugs^y_+5v+p1wu_^is5nm&b)67j8^uo7+s08_ga!h4*$u)5i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*", "sad-forecasting.onrender.com"]
 
 
 # Application definition
