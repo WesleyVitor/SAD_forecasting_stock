@@ -1,0 +1,22 @@
+<h1>Valor</h1>
+
+<form method="POST" >
+{% csrf_token %}
+<div>
+    <label>Data de Previsão:</label>
+    <input type="text" name="data" placeholder="dd-mm-yyyy">
+
+</div>
+
+<div>
+    <label>Nome da ação a ser prevista:</label>
+    <select name="stock">
+        <option value="itau">ITAU - ITUB4</option>
+        <option value="bradesco">Bradesco - BBDC4</option>
+        <option value="Santander">Santander - BCSA34</option>
+    </select>
+
+</div>
+
+<button type="submit">Enviar</button>
+</form>
