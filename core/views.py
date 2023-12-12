@@ -4,7 +4,7 @@ from core.service import forecasting_data
 
 class ValueOfStock(View):
     def get(self, request):
-        breakpoint()
+        
         return render(request, 'stock.html')
 
 
