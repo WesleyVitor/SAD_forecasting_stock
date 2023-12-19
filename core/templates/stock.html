@@ -1,3 +1,4 @@
+
 <h2>Previsão para o valor da ação do banco {{stock}}</h2>
 <br>
 <table>
@@ -5,14 +6,19 @@
     <tr>
         <th>Data</th>
         <th>Ação</th>
-        <th>Valor</th>
+        <th>Valor Previsto</th>
+        <th>Valor Real</th>
     </tr>
 </thead>
+<tbody>
+    {% for forecast in forecasts%}
     <tr>
-        <td>{{data}}</td>
+        <td>{{forecast.0}}</td>
         <td>{{stock}}</td>
-        <td>R$ {{forecast}}</td>
+        <td>R$ {{forecast.1}}</td>
+        <td>R$ {{forecast.2}}</td>
     </tr>
+    {% endfor %}
 
 </table>
 

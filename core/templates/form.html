@@ -1,10 +1,13 @@
-<h1>Predição de Ações do Setor Bancário</h1>
+<h1>Vericiador de predição de ações usando o modelo Prophet no setor Bancário</h1>
 
 <form method="POST" >
 {% csrf_token %}
 <div>
+    <b>Adicione datas que estão no passado, pois os valores reais no futuro ainda não existem!</b>
+    <br>
     <label>Data de Previsão:</label>
-    <input type="text" name="data" placeholder="dd-mm-yyyy">
+    <input type="text" name="data" placeholder="yyyy-mm-dd">
+    
 
 </div>
 
